@@ -1,0 +1,4 @@
+interface:
+  display_name: "软著登记信息"
+  short_description: "依据当前项目事实填写并严格核验软著登记字段与字符限制"
+  default_prompt: "使用 $complete-ruanzhu-registration-info 从当前项目资料提取并校验软著登记信息。"

@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "counting_rule": "Unicode NFC code points after trimming leading and trailing whitespace",
+  "fields": {
+    "rights_acquisition": {
+      "label": "权利取得方式",
+      "type": "string",
+      "required": true,
+      "choices": ["原始取得", "继受取得"]
+    },
+    "software_full_name": {
+      "label": "软件全称",
+      "type": "string",
+      "required": true,
+      "single_line": true
+    },
+    "software_short_name": {
+      "label": "软件简称",
+      "type": "string",
+      "required": false,
+      "single_line": true,
+      "forbid_values": ["无", "暂无", "没有", "不适用"]
+    },
+    "version": {
+      "label": "版本号",
+      "type": "string",
+      "required": true,
+      "single_line": true
+    },
+    "rights_scope": {
+      "label": "权利范围",
+      "type": "string",
+      "required": true,
+      "choices": ["全部权利", "部分权利"]
+    },
+    "software_category": {
+      "label": "软件分类",
+      "type": "string",
+      "required": true,
+      "choices": ["应用软件", "嵌入式软件", "中间件", "操作系统"]
+    },
+    "development_hardware": {
+      "label": "开发的硬件环境",
+      "type": "string",
+      "required": true,
+      "single_line": true,
+      "max_chars": 50
+    },
+    "runtime_hardware": {
+      "label": "运行的硬件环境",
+      "type": "string",
+      "required": true,
+      "single_line": true,
+      "max_chars": 50
+    },
+    "development_operating_system": {
+      "label": "开发该软件的操作系统",
+      "type": "string",
+      "required": true,
+      "single_line": true,
+      "max_chars": 50
+    },
+    "development_tools": {
+      "label": "软件开发环境/开发工具",
+      "type": "string",
+      "required": true,
+      "single_line": true,
+      "max_chars": 50
+    },
+    "runtime_platform": {
+      "label": "该软件的运行平台/操作系统",
+      "type": "string",
+      "required": true,
+      "single_line": true,
+      "max_chars": 50
+    },
+    "supporting_software": {
+      "label": "软件运行支撑环境/支持软件",
+      "type": "string",
+      "required": true,
+      "single_line": true,
+      "max_chars": 50
+    },
+    "programming_languages": {
+      "label": "编程语言",
+      "type": "array",
+      "required": false,
+      "unique": true,
+      "choices": [
+        "Assembly language",
+        "C",
+        "C#",
+        "C++",
+        "Delphi/Object Pascal",
+        "Go",
+        "HTML",
+        "Java",
+        "JavaScript",
+        "Objective-C",
+        "Perl",
+        "PHP",
+        "Python",
+        "Ruby",
+        "SQL",
+        "Swift",
+        "TypeScript",
+        "Visual Basic",
+        "XML"
+      ]
+    },
+    "other_programming_languages": {
+      "label": "其他编程语言",
+      "type": "string",
+      "required": false,
+      "single_line": true,
+      "max_chars": 120
+    },
+    "source_code_lines": {
+      "label": "源程序量",
+      "type": "integer",
+      "required": true,
+      "min_value": 1
+    },
+    "development_purpose": {
+      "label": "开发目的",
+      "type": "string",
+      "required": true,
+      "single_line": true,
+      "max_chars": 50
+    },
+    "target_industry": {
+      "label": "面向领域/行业",
+      "type": "string",
+      "required": true,
+      "single_line": true,
+      "max_chars": 50
+    },
+    "main_functions": {
+      "label": "软件的主要功能",
+      "type": "string",
+      "required": true,
+      "single_line": true,
+      "min_chars": 500,
+      "max_chars": 1300
+    },
+    "technical_feature_tags": {
+      "label": "软件的技术特点分类",
+      "type": "array",
+      "required": false,
+      "unique": true,
+      "choices": [
+        "APP",
+        "游戏软件",
+        "教育软件",
+        "金融软件",
+        "医疗软件",
+        "地理信息软件",
+        "云计算软件",
+        "信息安全软件",
+        "大数据软件",
+        "人工智能软件",
+        "VR软件",
+        "5G软件",
+        "小程序",
+        "物联网软件",
+        "智慧城市软件"
+      ]
+    },
+    "technical_features": {
+      "label": "软件的技术特点补充说明",
+      "type": "string",
+      "required": false,
+      "single_line": true,
+      "max_chars": 100
+    }
+  }
+}

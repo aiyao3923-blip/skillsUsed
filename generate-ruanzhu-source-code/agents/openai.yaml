@@ -1,0 +1,4 @@
+interface:
+  display_name: "软著源程序材料"
+  short_description: "核验系统特色、注释与合理复用，完整生成保留原版式的软著源程序材料"
+  default_prompt: "使用 $generate-ruanzhu-source-code 先核验当前系统的真实特色、注释与重复成因，再保留既有版式完整生成源程序 Word/PDF 材料。"

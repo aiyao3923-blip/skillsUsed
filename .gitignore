@@ -1,0 +1,18 @@
+# Python/runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and credentials
+.venv/
+venv/
+.env
+.env.*
+auth.json
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+desktop.ini

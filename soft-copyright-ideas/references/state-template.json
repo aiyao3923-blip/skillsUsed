@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "mode": "title_triage",
+  "baseline_version": "B0",
+  "baseline": {
+    "status": "draft"
+  },
+  "identity": {
+    "software_name": "",
+    "version": "",
+    "name_status": "candidate"
+  },
+  "decisions": [],
+  "claims": [],
+  "artifacts": [],
+  "traceability": [],
+  "risks": [],
+  "open_conflicts": []
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "软著操作手册"
+  short_description: "根据真实项目操作和截图生成格式准确、可核验的软著使用手册"
+  default_prompt: "使用 $generate-ruanzhu-manual 为当前软件生成基于真实操作和截图的软著手册。"

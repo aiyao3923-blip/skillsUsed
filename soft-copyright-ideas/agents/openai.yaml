@@ -1,0 +1,8 @@
+interface:
+  display_name: "软著思路"
+  short_description: "分析软著项目题目、场景与需求，生成可追溯系统规划方案"
+  default_prompt: "使用 $soft-copyright-ideas 分析这个软件题目，先判断当前模式，再给出可核验的题目、场景或系统规划结果。"
+policy:
+  allow_implicit_invocation: true
+
+
